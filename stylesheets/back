@@ -1,0 +1,30 @@
+
+
+<div class="navbar">
+  <ul class="nav_container">
+    <li data-menuanchor="firstPage"><a href="#home" style="color: #FA4D67;">Linkedin</a></li>
+    <li data-menuanchor="secondPage"><a href="#projects">Sobre mi</a></li>
+    <li data-menuanchor="thirdPage"><a href="#about">¿Hablamos?</a></li>
+  </ul>
+</div>
+
+
+<section class="mainContent page" id="Home">
+<div class="Welcome">
+  <div class="textWelcome">
+    <h1> Sergio Mínguez Gala </h1>
+    <h2> UX Designer </h2>
+
+    <img src="./images/me.png" class="photoWelcome">
+  </div>
+
+<div class="insideContent">
+  <p>Afasfaf</p>
+
+</div>
+
+</section>
+
+<section class="page" id="dos">
+<p>222</p>
+</section>
