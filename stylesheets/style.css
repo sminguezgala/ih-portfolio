@@ -162,7 +162,7 @@ div.arrow {
 
 /*grid system */
 
-@media screen and (max-width: 768px) {
+@media  (max-width: 768px) {
 
   .homePhoto {
     animation: none;
@@ -238,7 +238,7 @@ div.arrow {
     }
 
 }
-@media screen and (max-width: 480px) {
+@media (max-width: 480px) {
 
   .homePhoto {
   animation: none;
@@ -321,7 +321,7 @@ div.arrow {
 }
 
 
-@media screen and (max-device-width: 823px) {
+@media (max-device-width: 823px) {
 
   .homePhoto {
   animation: none;
