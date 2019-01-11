@@ -320,18 +320,6 @@ div.arrow {
 
 }
 
-@media (max-width: 823px) {
-  /* NEXT */
-    .btnNext {
-      visibility: visible;
-      width: 100px;
-      height: 100px;
-      position: absolute;
-      top: 90%;
-      left: 83%;
-  }
-}
-
 
 @media (max-device-width: 823px) {
 
