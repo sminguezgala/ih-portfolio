@@ -4,13 +4,14 @@ function ScrollHandler(pageId) {
   var page = document.getElementById(pageId);
   var pageStart = page.offsetTop;
   var pageJump = false;
+  var control = 0;
   var viewStart;
   var duration = 1200;
   var scrolled = document.getElementById("scroll");
 
-
   function scrollToPage() {
     pageJump = true;
+    control = 1;
 
     // Calculate how far to scroll
     var startLocation = viewStart;
@@ -34,6 +35,7 @@ function ScrollHandler(pageId) {
         cancelAnimationFrame(runAnimation);
         setTimeout(function() {
           pageJump = false;
+          control = 0
         }, 500);
       }
     }
@@ -57,7 +59,6 @@ function ScrollHandler(pageId) {
   }
 
   window.addEventListener("wheel", function(event) {
-    /* console.log('eent')*/
     viewStart = scrolled.scrollTop;
     if (!pageJump) {
       var pageHeight = page.scrollHeight;
@@ -155,7 +156,6 @@ function ScrollHandler(pageId) {
         evt.preventDefault();
       }
 
-
     }
     /* reset values */
     xDown = null;
@@ -164,8 +164,9 @@ function ScrollHandler(pageId) {
 
 }
 
-
-new ScrollHandler("home");
-new ScrollHandler("project1");
-new ScrollHandler("project2");
-new ScrollHandler("project3");
+window.onload = function() {
+  new ScrollHandler("home");
+  new ScrollHandler("project1");
+  new ScrollHandler("project2");
+  new ScrollHandler("project3");
+};
