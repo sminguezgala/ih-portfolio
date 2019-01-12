@@ -57,7 +57,7 @@ function ScrollHandler(pageId) {
   }
 
   window.addEventListener("wheel", function(event) {
-    console.log('eent')
+    /* console.log('eent')*/
     viewStart = scrolled.scrollTop;
     if (!pageJump) {
       var pageHeight = page.scrollHeight;
@@ -75,7 +75,7 @@ function ScrollHandler(pageId) {
       var stopJumpUp = pageEndPart > pageStopPortion;
 
       var scrollingForward = event.deltaY > 0;
-      console.log(scrollingForward)
+      /*console.log(scrollingForward) */
       if (
         (scrollingForward && canJumpDown && !stopJumpDown) ||
         (!scrollingForward && canJumpUp && !stopJumpUp)
@@ -83,7 +83,7 @@ function ScrollHandler(pageId) {
         event.preventDefault();
         scrollToPage();
       }
-      false; //
+
     } else {
       event.preventDefault();
     }
@@ -105,7 +105,7 @@ function ScrollHandler(pageId) {
     const firstTouch = getTouches(evt)[0];
     xDown = firstTouch.clientX;
     yDown = firstTouch.clientY;
-  };
+  }
 
   function handleTouchMove(evt) {
     if ( ! xDown || ! yDown ) {
@@ -142,7 +142,7 @@ function ScrollHandler(pageId) {
         var stopJumpUp = pageEndPart > pageStopPortion;
 
         var scrollingForward = yDiff > 0 ? true : false;
-        console.log(scrollingForward)
+        /*console.log(scrollingForward)*/
         if (
           (scrollingForward && canJumpDown && !stopJumpDown) ||
           (!scrollingForward && canJumpUp && !stopJumpUp)
@@ -150,7 +150,7 @@ function ScrollHandler(pageId) {
           evt.preventDefault();
           scrollToPage();
         }
-        false; //
+
       } else {
         evt.preventDefault();
       }
@@ -160,7 +160,7 @@ function ScrollHandler(pageId) {
     /* reset values */
     xDown = null;
     yDown = null;
-  };
+  }
 
 }
 

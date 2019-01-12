@@ -28,3 +28,79 @@
 <section class="page" id="dos">
 <p>222</p>
 </section>
+
+
+Ida en css
+
+/*
+/* NEXT */
+  .btnNext {
+    visibility: visible;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 90%;
+    left: 83%;
+}
+
+div.arrowN {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 20%;
+  top: 68%;
+  margin-top: -8px;
+  box-sizing: border-box;
+  margin-top: -8px;
+  border-width: 0 4px 4px 0;
+  border-style: solid;
+  border-color: white;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+
+  .btnNext span {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    top: 41%;
+    left: 14%;
+    margin-top: -13px;
+  }
+
+/*Previous*/
+
+  .btnPrevious {
+    visibility: visible;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 90%;
+    left: 71%;
+}
+
+div.arrowP {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 32%;
+  top: 47%;
+  margin-top: -8px;
+  box-sizing: border-box;
+  margin-top: -8px;
+  border-width: 0 4px 4px 0;
+  border-style: solid;
+  border-color: white;
+  -webkit-transform: rotate(-134deg);
+  transform: rotate(-134deg);
+  }
+
+  .btnPrevious span {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    top: 89%;
+    left: 18%;
+    margin-top: -13px;
+  }
+  
