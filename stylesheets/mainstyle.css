@@ -512,14 +512,24 @@ div.arrow {
 
 @media screen and (max-device-width: 823px) {
 
+  body {
+    overflow-y: auto;
+  }
+
+  main#scroll {
+    overflow-y: auto;
+  }
+
   .homePhotoControlx {
-    overflow-x: hidden;
+    overflow: hidden;
+
   }
 
   .homePhoto {
   animation: none;
   height: 98vh;
   float: none;
+  overflow: hidden;
   }
 
   .navigationMenu {

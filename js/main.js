@@ -58,37 +58,38 @@ function ScrollHandler(pageId) {
     runAnimation = requestAnimationFrame(animate);
   }
 
-  window.addEventListener("wheel", function(event) {
-    viewStart = scrolled.scrollTop;
-    if (!pageJump) {
-      var pageHeight = page.scrollHeight;
-      var pageStopPortion = pageHeight / 2;
-      var viewHeight = window.innerHeight;
+    window.addEventListener("wheel", function(event) {
+      viewStart = scrolled.scrollTop;
+      if (!pageJump) {
+        var pageHeight = page.scrollHeight;
+        var pageStopPortion = pageHeight / 2;
+        var viewHeight = window.innerHeight;
 
-      var viewEnd = viewStart + viewHeight;
-      var pageStartPart = viewEnd - pageStart;
-      var pageEndPart = pageStart + pageHeight - viewStart;
+        var viewEnd = viewStart + viewHeight;
+        var pageStartPart = viewEnd - pageStart;
+        var pageEndPart = pageStart + pageHeight - viewStart;
 
-      var canJumpDown = pageStartPart >= 0;
-      var stopJumpDown = pageStartPart > pageStopPortion;
+        var canJumpDown = pageStartPart >= 0;
+        var stopJumpDown = pageStartPart > pageStopPortion;
 
-      var canJumpUp = pageEndPart >= 0;
-      var stopJumpUp = pageEndPart > pageStopPortion;
+        var canJumpUp = pageEndPart >= 0;
+        var stopJumpUp = pageEndPart > pageStopPortion;
 
-      var scrollingForward = event.deltaY > 0;
-      /*console.log(scrollingForward) */
-      if (
-        (scrollingForward && canJumpDown && !stopJumpDown) ||
-        (!scrollingForward && canJumpUp && !stopJumpUp)
-      ) {
+        var scrollingForward = event.deltaY > 0;
+        /*console.log(scrollingForward) */
+        if (
+          (scrollingForward && canJumpDown && !stopJumpDown) ||
+          (!scrollingForward && canJumpUp && !stopJumpUp)
+        ) {
+          event.preventDefault();
+          scrollToPage();
+        }
+
+      } else {
         event.preventDefault();
-        scrollToPage();
       }
+    });
 
-    } else {
-      event.preventDefault();
-    }
-  });
 
   /* MOUSE EVENTS */
   document.addEventListener('touchstart', handleTouchStart, false);
