@@ -71,6 +71,57 @@ section.page {
   animation-name: slidein;
 }
 
+/*Scroll-slide indicator*/
+
+
+.lineScrll {
+  width: 4px;
+  height: 90px;
+  background-image: linear-gradient(to    top, rgba(255, 255, 255, 0), #fff    100%);
+  position: absolute;
+  left: 10%;
+  top: 85%;
+
+}
+
+.webScrll{
+
+position: absolute;
+left: 10px;
+top: -4px;
+font-weight: bold;
+
+}
+
+.mobileScrll {
+
+display: none;
+
+}
+
+
+.insideScrll {
+  width: 4px;
+  height: 8px;
+  background-color: black;
+  position: absolute;
+  animation: scrollSlide 2.4s ease-out infinite;
+}
+
+@keyframes scrollSlide {
+  0% {
+      top: -10%;
+    opacity: 1;
+ }
+ 470% {
+   opacity: 0.5;
+ }
+ 100% {
+     top: 100%;
+   opacity: 0;
+ }
+}
+
 @keyframes slidein {
   from {
     margin-right: -30%;
@@ -126,33 +177,61 @@ section.page {
   }
 }
 
+@keyframes circulito {
+  0% {
+    right: -1000px;
+  }
+  100% {
+    right: 0;
+  }
+}
+
+@keyframes circulito360 {
+  0% {
+    right: 0;
+    height: 100vh;
+  }
+  100% {
+    height: 100vh;
+    right: -1000px;
+  }
+}
+
 /*navbar*/
 
 
-.nav_container {
+.topnav {
   display: flex;
-  justify-content: flex-end;
+  justify-content: flex-end;;
+  text-align: right;
+  overflow: hidden;
+  background-color: #0F0F0F;
 }
 
-.nav{
-  margin-right: 3%;
-  margin-top: 0px;
-
-}
-
-.nav li{
-  padding: 16px 0 16px 32px;
-}
-
-.nav ul li a{
+.topnav a {
+  display: block;
   color: #F3F3F3;
+  text-align: center;
+  font-weight: bold;
+  padding: 14px 16px;
   text-decoration: none;
-  font-weight: 500;
+  font-size: 17px;
 }
 
-.nav ul li a:hover{
+.topnav a:hover {
+
   font-weight: bold;
 }
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
 
 .rightLink {
 position: absolute;
@@ -441,7 +520,6 @@ div.arrow {
   animation: none;
   height: 98vh;
   float: none;
-
   }
 
   .navigationMenu {
@@ -450,6 +528,7 @@ div.arrow {
   .mainContent {
     grid-column: span 12;
   }
+
 
   .homeName {
     font-size: 88px;
@@ -511,6 +590,105 @@ div.arrow {
     font-size: 36px;
     font-weight: normal;
   }
+
+  .mobileScrll {
+
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: -4px;
+    font-weight: bold;
+  }
+
+  .webScrll {
+
+    display: none;
+  }
+
+  section.page {
+    padding-top: 52px;
+  }
+
+  .topnav {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: right;
+    font-size: 80px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    margin-top: 60px;
+    z-index: 10
+  }
+
+  .topnav2 {
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: right;
+    font-size: 80px;
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    right: 0;
+    background-color: #0F0F0F;
+    z-index: 12
+  }
+
+  .topnav a {
+    text-align: right;
+  }
+
+  .topnav-animation {
+    animation: circulito360 0.75s ease-in;
+  }
+
+a.lul {
+  padding: 0;
+  opacity: 0;
+  height: 0px;
+  font-size: 80px;
+
+}
+
+  .topnav .icon {
+    display: block;
+    top: 0 ;
+      right: 0;
+      font-size: 85px;
+      padding: 14px 16px;
+      text-align: right;
+
+  }
+
+  .topnav2 .icon {
+    display: block;
+    top: 0 ;
+      right: 0;
+      font-size: 85px;
+      padding: 14px 16px;
+      text-align: right;
+
+  }
+
+  .topnav.responsive{
+     position: fixed;
+     right: 0;
+    height: 100vh;
+    animation: circulito 0.45s ease-in;
+    margin-bottom: 80px;
+
+   }
+   .topnav.responsive a {
+     text-align: right;
+
+   }
+
+   a.fix{
+     opacity: 1;
+     height: auto;
+     padding: 62px 54px;
+   }
 
 }
 

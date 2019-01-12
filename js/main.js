@@ -169,4 +169,21 @@ window.onload = function() {
   new ScrollHandler("project1");
   new ScrollHandler("project2");
   new ScrollHandler("project3");
+
 };
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  var y = document.querySelectorAll('.lul');
+  var z = document.querySelector('.icon');
+
+  if (x.className === "topnav" || x.className === "topnav topnav-animation") {
+    x.classList.add("responsive");
+    y.forEach(e => e.classList.add('fix'));
+  } else {
+    x.className = "topnav topnav-animation";
+    setTimeout(() => {
+        y.forEach(e => e.classList.remove('fix'));
+    }, 750);
+  }
+}
