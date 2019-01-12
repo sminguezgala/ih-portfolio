@@ -58,6 +58,11 @@ function ScrollHandler(pageId) {
     runAnimation = requestAnimationFrame(animate);
   }
 
+  function isMobileDevice() {
+    return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+};
+
+  if (!isMobileDevice()) {
     window.addEventListener("wheel", function(event) {
       viewStart = scrolled.scrollTop;
       if (!pageJump) {
@@ -89,11 +94,12 @@ function ScrollHandler(pageId) {
         event.preventDefault();
       }
     });
+  }
 
 
   /* MOUSE EVENTS */
-  document.addEventListener('touchstart', handleTouchStart, false);
-  document.addEventListener('touchmove', handleTouchMove, false);
+  // document.addEventListener('touchstart', handleTouchStart, false);
+  // document.addEventListener('touchmove', handleTouchMove, false);
 
   var xDown = null;
   var yDown = null;
