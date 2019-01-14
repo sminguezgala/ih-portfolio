@@ -744,7 +744,7 @@ div.arrow {
   .boxText {
     position: absolute;
     width: 90%;
-    top: 66%;
+    top: 70%;
     left: 5%;
     transform: translateY(-50%);
   }
@@ -762,8 +762,8 @@ div.arrow {
     height: 126px;
     border-width: 18px;
     position: absolute;
-    top: 76%;
-    left: 79%;
+    top: 85%;
+    left: 76%;
   }
 
   .btnInfo span {
@@ -791,10 +791,10 @@ div.arrow {
   }
   .lineScrll {
     width: 11px;
-    height: 180px;
+    height: 262px;
     background-image: linear-gradient(to top, rgb(255, 255, 255), rgba(255, 255, 255, 0));
     left: 10%;
-    top: 90%;
+    top: 85%;
   }
 
   .insideScrll {
