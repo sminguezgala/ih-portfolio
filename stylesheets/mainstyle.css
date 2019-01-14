@@ -272,8 +272,10 @@ left: -1%
 
 .homePhoto {
   height: 96vh;
-  float: right;
-  align-items: right;
+  position: absolute;
+  right: 0%;
+  display: inline-block;
+  z-index: -1;
 }
 
 /* Image sections */
@@ -710,7 +712,6 @@ div.arrow {
 
   .homePhoto {
   animation: none;
-  height: 98vh;
   height: 95vh;
   position: absolute;
   top: 6%;
