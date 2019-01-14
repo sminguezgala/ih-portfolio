@@ -444,6 +444,7 @@ left: 24%;
   margin-bottom: 10%;
   margin-top: 5%;
 }
+
 .talkTo a{
 
   color: #F3F3F3;
@@ -481,91 +482,36 @@ left: 24%;
 /*grid system */
 
 @media  (max-width: 864px) {
-  .homePhotoControlx {
-    overflow-x: hidden;
-  }
-
-  .homePhoto {
-    animation: none;
-    height: 96vh;
-    position: absolute;
-    right: 0%;
-    z-index: -1;
-  }
-
-  .mainContent {
-    grid-column: span 6;
-  }
-  .homeName {
-    font-size: 60px;
-    background-color: #0F0F0F60;
-    padding: 24px 24px 16px 24px
-  }
-  .homeSubName {
-    font-size: 36px;
-    background-color: #0F0F0F60;
-    padding: 0px 24px 16px 24px
-  }
-
-  .lineScrll {
-    left: 6%;
-  }
-
-    /* .btnInfo {
-      position: absolute;
-      top: 66%;
-      left: 42%;
-  }
-    .abc {
-      position: absolute;
-      left: 42%;
-      top: 75%;
+    .homePhotoControlx {
+      overflow-x: hidden;
     }
 
-  div.arrow {
-      width: 24px;
-      height: 24px;
-      box-sizing: border-box;
+    .homePhoto {
+      animation: none;
+      height: 96vh;
       position: absolute;
-      right: 15%;
-      top: 45%;
-      margin-top: -8px;
-      border-width: 0 6px 6px 0;
-      border-style: solid;
-      border-color: white;
-      -webkit-transform: rotate(-45deg);
-      transform: rotate(-45deg);
+      right: 0%;
+      z-index: -1;
     }
 
-    .btnInfo span {
-      position: absolute;
-      color: white;
-      top: 29%;
-      left: 25%;
+    .mainContent {
+      grid-column: span 6;
     }
-
-    .proyectName {
+    .homeName {
       font-size: 60px;
+      background-color: #0F0F0F60;
+      padding: 24px 24px 16px 24px
+    }
+    .homeSubName {
+      font-size: 36px;
+      background-color: #0F0F0F60;
+      padding: 0px 24px 16px 24px
     }
 
-    .proyectDescription {
-      font-size: 20px;
-      font-weight: normal;
+    .lineScrll {
+      left: 6%;
     }
 
-    .imageBlock{
-        width: 40%;
-        position: absolute;
-        left: 57%;
-        background-size: 166%;
-
-    }
-
-    .boxText {
-      width: 43%;
-    }
-
-    */
 
 
       .btnInfo {
@@ -622,7 +568,19 @@ left: 24%;
         transform: translateY(-50%);
       }
 
+      .aboutName {
+        font-size: 26px;
+      }
 
+      .aboutSubName {
+        font-size: 20px;
+      }
+
+      .talkTo {
+
+        font-size: 20px;
+
+      }
 
 }
 @media (max-width: 480px) {
@@ -719,6 +677,18 @@ div.arrow {
   .endPage {
     left: 26%;
     top: 165%;
+  }
+  .aboutName {
+    font-size: 20px;
+  }
+
+  .aboutSubName {
+    font-size: 18px;
+  }
+
+  .talkTo {
+
+    font-size: 18px;
   }
 
 }
