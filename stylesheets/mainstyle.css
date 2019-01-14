@@ -366,8 +366,8 @@ div.arrow {
   height: 32px;
   box-sizing: border-box;
   position: absolute;
-  right: 15%;
-  top: 40%;
+  right: 47%;
+  top: 88%;
   margin-top: -8px;
   border-width: 0 6px 6px 0;
   border-style: solid;
@@ -453,6 +453,187 @@ left: 24%;
   text-decoration: underline;
 
 }
+/* ARTICLES */
+
+
+
+.bannerArticle {
+  width: 100%;
+    height: 100vh;
+    position: absolute;
+    left: 0%;
+    background-position: 67% 85%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+.mockup1Art {
+
+      background-image: url(../images/mockup1.png);
+      background-color: #4f4ae6;
+
+
+  }
+
+.mockup2Art {
+
+      background-image: url(../images/mockup2.png);
+      background-color: #2484ab;
+
+  }
+
+.mockup3Art {
+
+      background-image: url(../images/mockup3.png);
+      background-color: #239298;
+      background-size: 110%;
+
+
+  }
+
+  .fullscreenBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+  }
+
+  .fullscreenbBgVideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media (min-aspect-ratio: 16/9) {
+    .fullscreenbBgVideo {
+      height: 300%;
+      top: -100%;
+    }
+  }
+
+  @media (max-aspect-ratio: 16/9) {
+    .fullscreenbBgVideo {
+      width: 300%;
+      left: -100%;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .fullscreenbBg {
+      background: url('../img/mockup1.png') center center / cover no-repeat;
+    }
+
+
+  }
+
+.articleContainertName {
+  position: absolute;
+  width: 42%;
+  top: 53%;
+  left: 76%;
+
+  }
+
+.articleName {
+
+  font-size: 35px;
+  font-weight: bold;
+
+}
+
+.articleTextContainer {
+  position: absolute;
+  width: 90%;
+  top: 28%;
+  left: 5%;
+    }
+  .articleTextContainer p {
+  font-size: 20px;
+        }
+
+.logoArticle {
+  position: absolute;
+  top: 35%;
+  width: 40%;
+  left: 5%;
+}
+.imageArticle {
+  width: 50%;
+  height: 25%;
+  position: absolute;
+  right: 0%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+    }
+
+.imageArticle.lea1 {
+    top: 0%;
+    background-image: url(../images/leavee/1.png);
+    opacity: 0.7;
+
+}
+
+.imageArticle.lea2 {
+    top: 25%;
+        background-image: url(../images/leavee/2.png);
+        opacity: 0.7;
+}
+
+.imageArticle.lea3 {
+    top: 50%;
+        background-image: url(../images/leavee/3.png);
+        opacity: 0.7;
+}
+
+.imageArticle.lea4 {
+    top: 75%;
+        background-image: url(../images/leavee/4.png);
+        opacity: 0.7;
+}
+
+.imageArticle.lea1:hover {
+opacity: 1;
+height: 80%;
+z-index: 22;
+}
+.imageArticle.lea2:hover {
+opacity: 1;
+height: 80%;
+z-index: 23;
+top: 0%;
+
+}
+.imageArticle.lea3:hover {
+opacity: 1;
+height: 80%;
+z-index: 24;
+top: 0%;
+}
+.imageArticle.lea4:hover {
+opacity: 1;
+height: 80%;
+z-index: 25;
+top: 14%;
+}
+
+.tooltipArticle {
+  position: absolute;
+  width: 40%;
+  bottom: 25%;
+  left: 5%;
+}
+
+}
+
 
 /*colors*/
 .spotifyC {

@@ -172,10 +172,13 @@ function ScrollHandler(pageId) {
 }
 
 window.onload = function() {
-  new ScrollHandler("home");
-  new ScrollHandler("project1");
-  new ScrollHandler("project2");
-  new ScrollHandler("project3");
+  new ScrollHandler("section1");
+  new ScrollHandler("section2");
+  new ScrollHandler("section3");
+  new ScrollHandler("section4");
+  new ScrollHandler("section5");
+  new ScrollHandler("section6");
+  new ScrollHandler("section7");
 
 };
 
