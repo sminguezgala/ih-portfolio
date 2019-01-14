@@ -224,6 +224,15 @@ display: none;
   font-weight: bold;
 }
 
+/*Back to previous*/
+
+a.backTo {
+
+  position: absolute;
+  left: 0%;
+
+}
+
 .active {
   background-color: #0F0F0F;
   color: white;
@@ -389,6 +398,85 @@ left: 24%;
   top: 166%;
   left: 40%;
 }
+
+/*AboutMe*/
+
+.aboutText {
+  position: absolute;
+  width: 95%;
+  top: 10%;
+}
+
+.aboutClues {
+    margin-top: 1%;
+}
+
+.aboutPhoto {
+  height: 53vh;
+  position: absolute;
+  right: -23%;
+  top: -29%;
+  overflow: hidden;
+}
+
+.aboutName {
+  font-size: 40px;
+  padding: 16px 16px 8px 16px
+}
+
+.aboutSubName {
+  font-size: 26px;
+  padding: 22px 16px 8px 16px
+}
+
+.aboutSubName a {
+  text-decoration: none;
+}
+
+.italicText {
+  font-style: italic;
+}
+
+.talkTo {
+
+  font-size: 26px;
+  text-align: right;
+  margin-bottom: 10%;
+  margin-top: 5%;
+}
+.talkTo a{
+
+  color: #F3F3F3;
+  text-decoration: underline;
+
+}
+
+/*colors*/
+.spotifyC {
+  color: #1db954;
+}
+.ucaC {
+  color: #E87B00;
+}
+.creativityC {
+    color: #ed2124;
+}
+
+.ironhackC {
+    color: #32c3ff;
+}
+.spotify:hover {
+  color: #147937;
+  text-decoration-line: underline;
+  text-decoration-color: #F3F3F3;
+}
+
+.aboutMore {
+  font-size: 20px;
+  font-weight: normal;
+  padding: 0px 16px 8px 16px
+}
+
 
 /*grid system */
 
@@ -653,7 +741,10 @@ div.arrow {
   .homePhoto {
   animation: none;
   height: 98vh;
-  float: none;
+  height: 95vh;
+  position: absolute;
+  top: 6%;
+  z-index: -1;
   overflow: hidden;
   }
 
@@ -842,7 +933,8 @@ a.lul {
    a.fix{
      opacity: 1;
      height: auto;
-     padding: 62px 54px;
+      margin-top: 20%;
+     padding: 0px 54px;
    }
 
   .endPage {
@@ -851,7 +943,43 @@ a.lul {
     left: 32%;
   }
 
+  a.backTo {
+
+    position: absolute;
+    right: 0%;
+    margin-top: 20%;
+
+  }
+
+  /*AboutmeMobile*/
+
+  .aboutText {
+    position: absolute;
+    width: 95%;
+    top: 6%;
+  }
+
+  .aboutClues {
+      margin-top: 1%;
+  }
+  .aboutName {
+    font-size: 80px;
+    padding: 16px 16px 8px 16px
+  }
+
+  .aboutSubName {
+    font-size: 46px;
+    padding: 85px 16px 8px 16px
+  }
+
+  .talkTo {
+
+    font-size: 46px;
+    padding: 22px 16px 8px 16px;
+    text-align: right;
+  }
 }
+
 
 
 /*OLD
